@@ -1,5 +1,5 @@
 <template>
-    <v-btn rounded="lg" :text="title" :icon="icon" :size="size" variant="outlined" class="base-button text-capitalize">
+    <v-btn rounded="lg" :text="title" :icon="icon" :size="size" :block="block" variant="outlined" class="base-button text-capitalize" :class="classes">
         <template v-slot:prepend>
             <slot name="prepend"/>
         </template>
@@ -24,25 +24,30 @@
             type: String,
         },
 
+        block: {
+            type: Boolean,
+            default: false
+        },
+
         icon: {
             type: Boolean,
             default: false,
         },
 
-        color: {
+        colorType: {
             type: String,
             default: ''
         }
     })
 
     const classes = computed(() => {
-        // let classesButton = []
+        let classesButton = []
 
-        // if (props.size === 'medium') {
-        //     classesButton.push('button__size--normal')
-        // }
+        if (props.colorType === 'strong') {
+            classesButton.push('base-button--strong')
+        }
 
-        // return classesButton
+        return classesButton
     })
 </script>
 
@@ -52,5 +57,11 @@
         color: $textSub500;
         border: 1px solid $strokeSoft200;
         background-color: transparent;
+
+        &--strong {
+            background-color: $primaryBase;
+            color: white;
+            border: inherit;
+        }
 	}
 </style>

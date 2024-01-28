@@ -2,6 +2,7 @@
     <card-dashboard icon="Clock" title="Horas diárias de trabalho" buttonTitle="Detalhes">
         <template v-slot:content>
             <div class="d-flex flex-column justify-between">
+                <base-divisor class="mb-5" />
                 <div class="label-medium text-sub500 pb-4">
                     <span class="text-main900">{{time.total.hour}}</span> horas <span class="text-main900">{{time.total.minutes}}</span> minutos no total ⏳
                 </div>
