@@ -1,5 +1,5 @@
 <template>
-    <hr class="divisor my-2" />
+    <hr class="divisor my-1" />
 </template>
 
 <style lang="scss" scoped>

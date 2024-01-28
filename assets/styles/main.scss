@@ -23,6 +23,21 @@ $stateFeature: #6E3FF3;
 
 body {
 	font-family: 'Inter', sans-serif;
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+	
+	::-webkit-scrollbar-track {
+		background: #f1f1f1; 
+	}
+	
+	::-webkit-scrollbar-thumb {
+		background: $primaryBase; 
+	}
+	
+	::-webkit-scrollbar-thumb:hover {
+		background: $primaryBase; 
+	}
 }
 
 .title-h3{

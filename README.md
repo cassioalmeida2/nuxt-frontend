@@ -1,25 +1,3 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
 ## Development Server
 
 Start the development server on `http://localhost:3000`:
@@ -38,38 +16,23 @@ yarn dev
 bun run dev
 ```
 
-## Production
+# Desafio de Desenvolvimento Front-end
 
-Build the application for production:
+## Visão Geral
+Nesse projeto foi utilizado Nuxt.js 3 utilizando composition API, padrão BEM de CSS e componetização separada para reutilização.
+Aqui você vai encontrar componentes recebendo props de fora e também com dados internos para exibi-los. As duas maneiras foram
+colocadas para demonstrar as possibilidades.
+No Nuxt.js 3 também é possível utilizar a Options API, tudo depende da organização do projeto e dos objetivos. Como o foco deste projeto
+foi usar as funcionalidades da versão 3 manteve-se o Options API.
 
-```bash
-# npm
-npm run build
+<br>
 
-# pnpm
-pnpm run build
+## Icones/Imagens
+Foi utilizado SVG em todos ícones e imagens da aplicação, para isso usamos SVGO e foi criado um componente Base para nos auxiliar.
 
-# yarn
-yarn build
 
-# bun
-bun run build
-```
+## Componentes
+Foi utilizado o Vuetify em sua versão 3 que nos fornece componentes editáveis e uma estrutura que auxilia o desenvolvimento.
+Com isso foram criados os componentes utilizando a base do Vuetify e adequando com a necessidade do projeto.
 
-Locally preview production build:
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

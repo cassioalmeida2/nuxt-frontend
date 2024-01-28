@@ -15,20 +15,34 @@
 				</div>
 			</v-col>
 			<v-col>
-				<highlight-collaborators />
+				<highlight-collaborators :collaborator="collaborator"/>
 			</v-col>
 		</v-row>
 
 		<v-row>
-			<v-col cols="8">
+			<v-col sm="12" md="12" lg="8" xl="8" class="courses-section">
 				<courses />
 			</v-col>
-			<v-col cols="4">
+			<v-col sm="12" md="12" lg="4" xl="4">
 				<daily-feedback />
 			</v-col>
 		</v-row>
 	</div>
 </template>
 
-<script>
+<script setup>
+	const collaborator = {
+		name: 'Matthew Johnson',
+        image: 'Avatar5',
+        position: 'Engenheiro de Software',
+        message: 'Funcionário de melhor desempenho de dezembro!'
+	}
 </script>
+
+<style lang="scss" scoped>
+@media (max-width: 700px) {
+	.courses-section {
+		display: none;
+	}
+}
+</style>

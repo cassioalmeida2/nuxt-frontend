@@ -115,7 +115,7 @@
     )
 
     const getStatus = (status) => {
-        return status === 'in_progress' ? {label:'Em endamento', icon: 'ClockWait'} : {label:'Concluído', icon: 'CheckCircle'}
+        return status === 'in_progress' ? {label:'Em andamento', icon: 'ClockWait'} : {label:'Concluído', icon: 'CheckCircle'}
     }
 </script>
 
