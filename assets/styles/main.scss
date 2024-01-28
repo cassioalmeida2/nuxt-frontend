@@ -1,0 +1,130 @@
+
+@font-face {
+	font-family: 'Inter';
+	src: url('~/assets/fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Inter Display';
+	src: url('~/assets/fonts/InterDisplay-Regular.ttf') format('truetype');
+}
+
+$strokeSoft200: #E2E4E9;
+$textSub500: #525866;
+$textSoft400: #868C98;
+$weak100: #F6F8FA;
+$primaryBase: #FF4A00;
+$main900: #0A0D14;
+$stateAway: #F2AE40;
+$stateAway: #F2AE40;
+$stateAway: #F2AE40;
+$stateVerified: #35B9E9;
+$stateFeature: #6E3FF3;
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+.title-h3{
+	font-family: "Inter Display";
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 48px;
+	letter-spacing: -0.4px;
+}
+
+.label-small {
+	font-family: "Inter";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: -0.084px;
+}
+
+.label-medium {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: -0.176px;
+}
+
+.label-large {
+	font-family: "Inter";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: -0.27px;
+}
+
+.paragraph-small {
+	font-family: "Inter";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.084px;
+}
+
+.paragraph-x-small {
+	font-family: "Inter";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.subheading-x-small {
+	font-family: "Inter";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+}
+
+.subheading-2x-small {
+	font-family: "Inter";
+	font-size: 11px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 12px;
+	letter-spacing: 0.22px;
+	text-transform: uppercase;
+}
+
+.text-main900 {
+	color: $main900;
+}
+
+.text-sub500 {
+	color:$textSub500;
+}
+
+.text-soft400 {
+	color:$textSoft400;
+}
+
+.text-primaryBase {
+	color: $primaryBase;
+}
+
+.link-default {
+	font-family: "Inter";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 16px;
+	text-decoration-line: underline;
+}
+
+.text-ellipsis {
+	white-space: nowrap;
+	width: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
